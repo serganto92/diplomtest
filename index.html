@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Разработка собственного сайта</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.edited.css">
+	<script src="https://kit.fontawesome.com/f5bc624561.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+	<script src="js/script.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<div class="flex-container">
+		<header class="header">
+			<button class="top-bar__menu-button"></button>
+			<nav class="header__menu menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Портфолио</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Стоимость</a></li>
+				</ul>
+			</nav>
+			<a class="header__phone phone" href="tel:+74999955577">+7 (499) 995-55-77</a>
+			<button class="header__request-button request-button">Заказать звонок</button>
+		</header>
+	</div>
+	<main class="main">
+		<div class="main-header">
+			<div class="letters-container">
+		 				<span class="letters-container__item letters-container__item--brackets">{ }</span>
+		 				<span class="letters-container__item letters-container__item--div1">&lt;div&gt;</span>
+		 				<span class="letters-container__item letters-container__item--div2">&lt;div&gt;</span>
+		 				<span class="letters-container__item letters-container__item--jail">#</span>
+		 				<span class="letters-container__item letters-container__item--slash">&lt;/&gt;</span>
+		 				<span class="letters-container__item letters-container__item--slash2">&lt;/&gt;</span>
+		 	</div>
+			<section class="intro">
+	 				<div class="author-title">
+	 					<h1 class="author-title__name">Панин Сергей</h1>
+	 					<p class="author-title__profession">Frontend-разработчик и веб-верстальщик</p>
+	 					<a href="#" class="author-title__button button">Узнать больше</a>
+	 				</div>
+          <div class="intro__wraper">
+	 				  <img src="img/man.png" alt="Разработчик" class="intro__photo">
+          </div>
+			</section>
+		</div>
+    <section class="works">
+      <div class="flex-container--column">
+        <div class="works__title">Что я делаю</div>
+        <div class="works__list">
+          <div class="works__item">
+            <div class="works__item item__photo--1">
+              <img src="img/landing.png" alt="Вёрстка landing-страниц" class="works__item-photo">
+            </div>
+            <div class="works__item-text">Вёрстка лендинг–страниц и сайтов любой сложности</div>
+          </div>
+          <div class="works__item">
+            <div class="works__item item__photo--2">
+              <img src="img/adaptive.png" alt="Адаптивная вёрстка" class="works__item-photo">
+            </div>
+            <div class="works__item-text">Адаптивная вёрстка под все браузеры и устройства</div>
+          </div>
+          <div class="works__item">
+            <div class="works__item item__photo--3">
+              <img src="img/programming.png" alt="Fullstack разработка" class="works__item-photo">
+            </div>
+            <div class="works__item-text">Frontend–разработка и программирование</div>
+          </div>
+          <div class="works__item">
+            <div class="works__item item__photo--4">
+              <img src="img/coding.png" alt="Доработка страниц" class="works__item-photo">
+            </div>
+            <div class="works__item-text">Исправление и доработка существующей вёрстки</div>
+          </div>
+        </div>
+        <button class="works__price button button--price">Узнать стоимость</button>
+      </div>
+    </section>
+    <!--
+    <section class="examples">
+  		<div class="flex-container--column">
+        <div class="examples-title">Примеры моих работ</div>
+        <div class="examples-list">
+          <div class="examples-list__item">
+            <img class="examples-list__photo examples-list__photo--1" src="img/example1.png">
+            <div class="examples-list__text">Сайт психолога Веры Антоновой</div>
+          </div>
+          <div class="examples-list__item">
+            <img class="examples-list__photo examples-list__photo--2" src="img/example2.png">
+            <div class="examples-list__text">Сайт магазина детской одежды</div>
+          </div>
+          <div class="examples-list__item">
+            <img class="examples-list__photo examples-list__photo--3" src="img/example3.png">
+            <div class="examples-list__text">Сайт магазина "Рыболов"</div>
+          </div>
+          <div class="examples-list__item">
+            <img class="examples-list__photo examples-list__photo--4" src="img/example4.png">
+            <div class="examples-list__text">Поисковый сервис "Яндекс"</div>
+          </div>
+          <button alt="Назад" class="examples-control back">
+          <button alt="Вперёд" class="examples-control forward">
+        </div>
+        <div class="examples-control__block">
+           <button alt="Начало" class="examples-control--dots examples-control__first"></button>
+           <button alt="Середина" class="examples-control--dots examples-control__second"></button>
+           <button alt="Конец" class="examples-control--dots examples-control__third"></button>
+        </div>
+        <button class="examples-button button button--examples">Заказать проект</button>
+  		</div>
+    </section>
+  -->
+    <section class="examples">
+      <div class="flex-container--column">
+        <div class="examples-title">Примеры моих работ</div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="examples-list__photo examples-list__photo--1" src="img/example1.png">
+              <span class="examples-list__text">Сайт психолога Веры Антоновой</span>
+            </div>
+            <div class="swiper-slide">
+              <img class="examples-list__photo examples-list__photo--2" src="img/example2.png">
+              <span class="examples-list__text">Сайт магазина детской одежды</span>
+            </div>
+            <div class="swiper-slide">
+              <img class="examples-list__photo examples-list__photo--3" src="img/example3.png">
+              <span class="examples-list__text">Сайт магазина "Рыболов"</span>
+            </div>
+            <div class="swiper-slide">
+              <img class="examples-list__photo examples-list__photo--4" src="img/example4.png">
+              <span class="examples-list__text">Поисковый сервис "Яндекс"</span>
+            </div>
+          </div>
+        </div>
+        <div class="slider__pagination"></div>
+        <div class="slider__button--prev"></div>
+        <div class="slider__button--next"></div>
+        <button class="examples-button button button--examples">Заказать проект</button>
+      </div>
+    </section>
+		<section class="price">
+			<div class="price-decoration">
+ 				<span class="price-decoration__item price-decoration__item--brackets">{ }</span>
+ 				<span class="price-decoration__item price-decoration__item--div1">&lt;div&gt;</span>
+ 				<span class="price-decoration__item price-decoration__item--brackets2">{ }</span>
+				<span class="price-decoration__item price-decoration__item--jail">#</span>
+        <span class="price-decoration__item price-decoration__item--slash">&lt;/&gt;</span>
+ 			</div>
+ 			<div class="price-text">
+ 				<div class="price-text__title">Адаптивная вёрстка под все устройства<br>и браузеры от 1000 рублей всего за 4 часа.*</div>
+					<div class="price-text__additional-text">* Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально,<br>в зависимости от сложности задач.</div>
+ 				</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer-nav">
+			<ul class="sections">
+				<li class="sections__item"><a class="sections__link" href="#">Услуги</a></li>
+				<li class="sections__item"><a class="sections__link" href="#">Портфолио</a></li>
+				<li class="sections__item"><a class="sections__link" href="#price">Стоимость</a></li>
+			</ul>
+			<ul class="contacts">
+				<li class="contacts__item"><a href="tel:+74999957755" class="contacts__link"><i class="fas fa-phone"></i>+7 (499) 995-77-55</a></li>
+				<li class="contacts__item"><a href="mailto:dmitry@alekseev.com" class="contacts__link"><i class="fas fa-envelope"></i>dmitry@alekseev.com</a></li>
+			</ul>
+			<div class="feedback">
+				<button class="feedback__request-button request-button">Заказать звонок</button>
+				<ul class="social">
+					<li class="social__item"><a href="#" class="social__link social__link--vk"></a></li>
+					<li class="social__item"><a href="#" class="social__link social__link--fb"></a></li>
+					<li class="social__item"><a href="#" class="social__link social__link--tw"></a></li>
+					<li class="social__item"><a href="#" class="social__link social__link--inst"></a></li>
+				</ul>
+			</div>
+		</div>
+		<p class="footer__copyright">© Дмитрий Алексеев, 2016 – 2018</p>
+	</footer>
+</body>
+</html>

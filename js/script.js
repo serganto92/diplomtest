@@ -4,7 +4,7 @@ $(function(){
 
   function SliderDesktop () {
     if ($(window).width() > 1024) {
-      var mySwiper = new Swiper ('.swiper-container', {
+      var mySwiper = new Swiper ('.slider-container', {
 
     direction: 'horizontal',
     spaceBetween: 30,
@@ -23,7 +23,7 @@ $(function(){
     }
 
   else if ($(window).width() < 1025) {
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper ('.slider-container', {
 
     direction: 'horizontal',
     slidesPerView: 2,

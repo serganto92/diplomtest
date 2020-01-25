@@ -6,6 +6,8 @@ $(function(){
     if ($(window).width() > 1024) {
       var mySwiper = new Swiper ('.slider-container', {
 
+    wrapperClass: 'slider',
+    slideClass: 'slider-item',
     direction: 'horizontal',
     spaceBetween: 30,
     slidesPerView: 3,
@@ -16,15 +18,14 @@ $(function(){
       prevEl: '.slider__button--prev',
     },
 
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   })
     }
 
   else if ($(window).width() < 1025) {
     var mySwiper = new Swiper ('.slider-container', {
 
+    wrapperClass: 'slider',
+    slideClass: 'slider-item',
     direction: 'horizontal',
     slidesPerView: 2,
     loop: false,
